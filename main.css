@@ -24,17 +24,18 @@ html, body {
 /* 헤더 */
 
 .header {
+    position: fixed;
     display: flex;
     width: 98%;
     height: 40px;
     align-items: center;
     overflow: hidden;
-    position: relative;
     background: #202020;
     border-radius: 10px;
     top: 1%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1000;
 }
 
 .header a img{
@@ -143,13 +144,11 @@ html, body {
 /* 메인 화면 */
 
 .main-div {
-    display: fixed;
+    position: fixed;
     top: 50%;
     width: 100vw;
     height: 25vw;
-    transform: translate(0, 30%);
-
-
+    transform: translate(0, -50%);
 }
 
 .logo-detail {

@@ -24,17 +24,18 @@ html, body {
 /* 헤더 */
 
 .header {
+    position: fixed;
     display: flex;
     width: 98%;
     height: 40px;
     align-items: center;
     overflow: hidden;
-    position: relative;
     background: #202020;
     border-radius: 10px;
     top: 1%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1000;
 }
 
 
