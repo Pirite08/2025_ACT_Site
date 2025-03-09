@@ -1,0 +1,225 @@
+body{
+    background-color: #101010;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+  }
+
+/* 헤더 */
+
+.header {
+    position: fixed;
+    display: flex;
+    width: 98%;
+    height: 40px;
+    align-items: center;
+    overflow: hidden;
+    background: #202020;
+    border-radius: 10px;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.header a img{
+    height: 25px;
+}
+
+.header a {
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* 헤더 목록 */
+
+.header-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-menu a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    transition: text-shadow 0.5s ease;
+}
+
+.header-menu a:hover {
+    text-shadow: 0px 0px 20px #ffffff;
+}
+
+.header-menu a:not(:last-child) {
+    padding-right: 10%;
+}
+
+/* 디스플레이 크기 조정에 따른 폰트 크기 조정 */
+@media screen and (max-width: 600px) {
+    .header-menu a {
+        font-size: 80%;
+    }
+}
+
+/* 헤더 로고 */
+
+.header-logo {
+    left: 2%;
+}
+
+/* 지원하기 버튼 */
+
+.apply-button {
+    display: flex;
+    position: relative;
+    width: 7%;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    right: 4%;
+    border-radius: 15px;
+
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+
+    background: linear-gradient(90deg, #FF63E2 0%, #BF52FF 100%);
+    box-shadow: 0px 0px 5px 1px #777;
+    transition: box-shadow 0.3s ease;
+}
+
+.apply-button:hover {
+    box-shadow: 0px 0px 10px 1px #f8aaff;
+}
+
+@media screen and (max-width: 600px) {
+    .apply-button {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/* 배경 */
+
+.background {
+    width: 70vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 50%;
+    transform: rotate(-15deg);
+    transform-origin: center center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -30vh;
+    margin-left: -35vw;
+
+
+    background: linear-gradient(90deg, rgba(191, 82, 255, 0.20) 5.03%, rgba(82, 122, 255, 0.20) 98.92%);
+    filter: blur(4vw);
+    z-index: -1;
+
+}
+
+/* 메인 화면 */
+
+.main-div {
+    position: fixed;
+    top: 50%;
+    width: 100vw;
+    height: 25vw;
+    transform: translate(0, -50%);
+}
+
+.logo-detail {
+    width: 25vw;
+    position: relative;
+    left: 25%;
+    opacity: 0;
+
+    animation: logo_detail_fadein 1s ease-out forwards;
+}
+@keyframes logo_detail_fadein {
+    from {
+        opacity: 0;
+        transform: translate(-10%, -10%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.main-text {
+    width: 30vw;
+    position: relative;
+    top: 15%;
+    left: 23%;
+
+    animation: main_text_fadein 1s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+@keyframes main_text_fadein {
+    from {
+        opacity: 0;
+        transform: translate(10%, 10%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.sub-text {
+    color: white;
+    font-weight: 100;
+    font-size: 1.5vw;
+    white-space: nowrap;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    opacity: 0;
+
+    animation: sub_text_fadein 1s ease-out forwards;
+    animation-delay: 0.6s;
+}
+@keyframes sub_text_fadein {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sub-text span {
+    background: linear-gradient(90deg, #BF52FF 0%, #FF63E2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+}
