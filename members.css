@@ -153,6 +153,20 @@ html, body {
     margin-left: 7vw;
 }
 
+.kings div {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+.kings div p {
+    position: absolute;
+    top: 23%;
+    left: 45%;
+}
+
 .kings div img {
     width: 23vw;
 }
@@ -170,9 +184,8 @@ html, body {
 hr {
     width: 50%;
     color: white;
-    margin-bottom: 1vw;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-bottom: 8vw;
+    margin-left: 25vw;
 }
 
 .intro_52 {
@@ -183,4 +196,55 @@ hr {
     margin-bottom: 20vw;
     color: white;
     background-color: linear-gradient(90deg, #FF63E2 0%, #BF52FF 100%);
+}
+
+.spcial-text {
+    background: linear-gradient(90deg, #BF52FF 0%, #527AFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mem52_startber {
+    display: flex;
+    width: 70vw;
+    height: 7vw;
+    background: linear-gradient(90deg, #BF52FF 0%, #527AFF 100%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.members-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10vw;
+    max-width: 60vw;
+    margin-left: 20vw;
+}
+
+.members-list div {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+.members-list div img {
+    width: 20vw;
+}
+
+.members-list div p {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+
+#last_mem {
+    margin-bottom: 10vw;
 }
