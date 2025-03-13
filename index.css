@@ -145,16 +145,16 @@ html, body {
 
 .main-div {
     position: fixed;
-    top: 50%;
+    top: 45%;
     width: 100vw;
-    height: 25vw;
+    height: 30vw;
     transform: translate(0, -50%);
 }
 
 .logo-detail {
     width: 25vw;
     position: relative;
-    left: 25%;
+    left: 23%;
     opacity: 0;
 
     animation: logo_detail_fadein 1s ease-out forwards;
@@ -174,7 +174,7 @@ html, body {
     width: 30vw;
     position: relative;
     top: 15%;
-    left: 23%;
+    left: 20%;
 
     animation: main_text_fadein 1s ease-out forwards;
     animation-delay: 0.3s;
@@ -197,8 +197,8 @@ html, body {
     font-size: 1.5vw;
     white-space: nowrap;
     position: absolute;
-    top: 80%;
-    left: 30%;
+    top: 70%;
+    left: 25%;
     opacity: 0;
 
     animation: sub_text_fadein 1s ease-out forwards;
@@ -222,4 +222,54 @@ html, body {
     -webkit-text-fill-color: transparent;
     font-family: "Rock Salt", cursive;
     font-weight: 400;
+}
+
+.see_detail {
+    position: absolute;
+    display: flex;
+    
+    width: 13vw;
+    height: 3vw;
+    top: 87.5%;
+    left: 65%;
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+#main {
+    display: flex;
+    background: black;
+    width: 13.5vw;
+    height: 3.5vw;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 300;   
+    font-size: 20px;
+}
+
+#bg {
+    display: flex;
+    z-index: 0;
+    width: 14vw;
+    height: 4vw;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(90deg, #BF52FF 0%, #FF63E2 100%);
+    /* box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.47); */
+    transition: transform 0.5s ease-out;
+}   
+
+#bg:hover {
+    transform: scale(0.9);
+}
+
+.see_detail a {
+    text-decoration: none;
 }
