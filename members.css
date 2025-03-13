@@ -248,3 +248,11 @@ hr {
 #last_mem {
     margin-bottom: 10vw;
 }
+
+#here {
+    font-weight: 600 !important;
+    background: linear-gradient(90deg, #BF52FF 0%, #76d6ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

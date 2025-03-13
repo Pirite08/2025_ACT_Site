@@ -238,6 +238,18 @@ html, body {
     justify-content: center;
     border-radius: 12px;
     z-index: 1;
+    opacity: 0;
+
+    animation: opacity 1.5s ease-out forwards;
+    animation-delay: 1s;
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #main {

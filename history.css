@@ -245,3 +245,10 @@ html, body {
     }
 }
 
+#here {
+    font-weight: 600 !important;
+    background: linear-gradient(90deg, #c971fc 0%, #76d6ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
