@@ -141,6 +141,26 @@ html, body {
 
 }
 
+.img_collect {
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 3vw;
+    font-weight: 500;
+    top: 45%;
+    animation: prepare 1.5s infinite alternate ease-out;
+}
+@keyframes prepare {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 #here {
     font-weight: 600 !important;
     background: linear-gradient(90deg, #BF52FF 0%, #63a9ff 100%);
