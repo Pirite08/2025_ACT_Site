@@ -219,13 +219,36 @@ html, body {
     position: relative;
     bottom: 0;
     text-align: center;
-    color: white;
+    color: black;
     font-weight: 800;
     font-size: 3vw;
     line-height: 8vw;
-    margin-bottom: 15vw;
+    margin-bottom: 30vh;
+    margin-top: 4vw;
+    width: 50vw;
+    background-color: white;
+    border-radius: 5vw;
+    animation: scroll_2023 linear;
+    animation-range: entry 0% cover 50%;
+    animation-timeline: view();
+}
+@keyframes scroll_2023 {
+    from {
+        opacity: 0;
+        scale: 0%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+        box-shadow: 0px 0px 5vw white;
+        
+    }
 }
 
-#spcial-2023 {
-    
+#here {
+    font-weight: 600 !important;
+    background: linear-gradient(90deg, #c971fc 0%, #76d6ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
