@@ -18,3 +18,23 @@ function smoothScroll() {
         }
     }, 16);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".history-nav ul li");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        },
+        {
+            root: null, // 뷰포트 기준
+            threshold: 0.2 // 요소가 20% 보이면 실행
+        }
+    );
+
+    items.forEach((item) => observer.observe(item));
+});
