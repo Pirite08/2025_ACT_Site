@@ -227,7 +227,7 @@ html, body {
     border-radius: 5vw;
     opacity: 0; /* 초기 상태: 숨김 */
     transform: scale(0); /* 초기 크기 */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out, box-shadow 0.8s ease-out;
+    transition: opacity 1.2s ease-out, transform 0.8s ease-out, box-shadow 1.2s ease-out;
 }
 
 .act-2023.show {
