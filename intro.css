@@ -281,17 +281,22 @@ html, body {
 }
 
 .deps {
+    display: flex;
     position: relative;
-    text-align: center;
     align-items: center;
-    width: 60%;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10vw;
+    top: 100%;
+    margin-bottom: 5vw;
 }
 
 .deps p {
-    position: absolute;
-    font-weight: 300;
-    font-size: 2vw;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.5vw;
     color: white;
+    line-height: 3vw;
 }
 
 
