@@ -38,3 +38,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     items.forEach((item) => observer.observe(item));
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const target = document.querySelector(".act-2023");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    target.classList.add("show");
+                }
+            });
+        },
+        {
+            root: null, // 뷰포트 기준
+            threshold: 0.3 // 30% 이상 보이면 실행
+        }
+    );
+
+    observer.observe(target);
+});

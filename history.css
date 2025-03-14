@@ -190,17 +190,6 @@ html, body {
     transform: scale(0.5);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
-@keyframes scroll {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
-    }
-}
-
 .history-nav ul li.show {
     opacity: 1;
     transform: scale(1);
@@ -236,9 +225,15 @@ html, body {
     width: 50vw;
     background-color: white;
     border-radius: 5vw;
-    animation: scroll_2023 linear;
-    animation-range: entry 0% cover 50%;
-    animation-timeline: view();
+    opacity: 0; /* 초기 상태: 숨김 */
+    transform: scale(0); /* 초기 크기 */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out, box-shadow 0.8s ease-out;
+}
+
+.act-2023.show {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0px 0px 5vw white;
 }
 @keyframes scroll_2023 {
     from {
